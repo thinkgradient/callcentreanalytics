@@ -15,7 +15,7 @@ In addition to the preceding Azure resources, you must also have the following i
 * pip install azure-storage
 
 
-### Architecture of Solution
+### Solution Architecture
 
 ![Call Centre Analytics](archprocess.png)
 
