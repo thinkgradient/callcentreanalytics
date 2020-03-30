@@ -38,7 +38,7 @@ SAS = configuration["storage"]["SAS"]
 
 blob_service = BlockBlobService(account_name, account_key)
 generator = blob_service.list_blobs(transcription_container,prefix=args.nonmasked_source_folder) 
-print(18*"#" + "Extract Entities + 18*"#")
+print(18*"#" + "Extract Entities" + 18*"#")
 print(16*"#" + "Sentiment Analysis" + 16*"#")
 print(19*"#" + "Mask Entities" + 18*"#")
 
