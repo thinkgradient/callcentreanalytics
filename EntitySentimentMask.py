@@ -104,7 +104,6 @@ def entity_extraction(subscription_key, docs):
     t2 = datetime.datetime.now().strftime(datetimeFormat)
     diff = datetime.datetime.strptime(t2, datetimeFormat)\
      - datetime.datetime.strptime(t1, datetimeFormat)
-    print(diff.seconds)
     return df
 
 
