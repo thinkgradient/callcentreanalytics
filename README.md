@@ -37,3 +37,13 @@ The input/ and output/ are folders within the data container in your storage acc
 python MaskBlobTranscriptions.py output/ output/
 ```
 The above will save the corresponding JSON transcription with a 'Masked_' prefix which now has masked entities in the transcribed text. This is useful when you want to protect PII data.
+
+
+
+## Authors
+
+* **Fatos Ismali**
+
+## Acknowledgments
+
+* Alan Weaver for writing the utility functions in TranscribeAudioFiles.py
