@@ -1,0 +1,28 @@
+{
+    "speech_api":{
+        "region":"",
+        "subscription_key": ""
+
+    },
+    "speech_model":{
+        "model_name": "base_model",
+        "endpoint_id":"",
+        "description":"If model_name = base_model, the endpoint_id is not used. The Speech API will also return the sentiment score for each utterance"
+    },
+    "text_api":{
+        "region":"",
+        "subscription_key":"",
+        "description": "Used for extracting entities. LUIS can also be used here."
+    },
+    "storage":{
+        "account_name":"",
+        "account_key":"",
+        "audio_container":"",
+        "transcription_container":"",
+        "SAS":"?sv=2019-02-02&.........."
+    },
+    "batch_config":{
+        "files_to_process": 10,
+        "description": "Number of files to process per run id or STT request. "
+    }
+}
