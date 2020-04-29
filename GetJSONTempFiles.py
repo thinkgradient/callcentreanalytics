@@ -142,7 +142,7 @@ def getTranscriptionsContent(transcription_ids, json_target_folder):
     number_of_rows = len(list_of_transcription_ids)
 
     while counter != number_of_rows:
-
+        counter = 0
         for index, row in transcriptions_df.iterrows():
             if counter == number_of_rows:
                 break
@@ -150,8 +150,9 @@ def getTranscriptionsContent(transcription_ids, json_target_folder):
 
                 if row["id"] == transcription_id and row["status"] in ("Succeeded","Failed"):
                     counter += 1
-                    print("counter in transribe1: ", counter)
+                    
         time.sleep(15)
+        print("Completed transcriptions: ", counter)
         transcriptions_df = listAllTranscriptions()
     
 
